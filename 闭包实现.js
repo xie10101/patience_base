@@ -72,16 +72,17 @@ function sleep(delay)
 }
 
 //具体使用 ：
-
 async  function getxx()
 {
-     await sleep(2000); // await 实际含义 -- promise 这一块 // 明晰 
+    await sleep(2000); 
+
+// await 接收 多种对象 - 接收 Promise 时会暂停等待 ；
+ 
 
 /**
  * 推测可能性 ： 
- *   await 处理暂停只是针对异步函数 -promise （微任务部分 ）
+ *   await 暂停等待只是针对异步函数 -promise （微任务部分 ）
  */
-
      console.log("延迟2秒执行 ")
 }
 
